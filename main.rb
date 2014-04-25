@@ -44,7 +44,7 @@ running_instances = aws_connection.get_instances(:status => :running)
 ich = InstanceCostHelper.new(reservations, running_instances)
 ich.compute_costs
 
-chef_nodes = ChefNodeCollection.new('http://lechef.crittercism.com:4000/',
+chef_nodes = ChefNodeCollection.new('https://lechef.crittercism.com/',
   'david', '/home/david/.chef/david.pem', ich)
 chef_nodes.index_roles
 
