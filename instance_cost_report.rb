@@ -11,7 +11,8 @@ class InstanceCostReport
     instance_types = [ "m1.small", "m1.medium", "m1.large", "m1.xlarge",
       "m3.medium", "m3.xlarge", "m3.2xlarge", "t1.micro", "m2.xlarge", "m2.2xlarge",
       "m2.4xlarge", "c1.medium", "c1.xlarge", "c3.large", "c3.xlarge",
-      "c3.2xlarge", "r3.2xlarge", "r3.4xlarge" ]
+      "c3.2xlarge", "r3.large", "r3.xlarge", "r3.2xlarge", "r3.4xlarge",
+      "i2.xlarge", "i2.2xlarge", "i2.4xlarge", "i2.8xlarge" ]
     availability_zones = [ 'us-west-1a', 'us-west-1c' ]
 
     instance_types.each do |it|
