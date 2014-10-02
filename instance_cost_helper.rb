@@ -66,9 +66,9 @@ class InstanceCostHelper
   protected
   def do_compute_costs
     instance_types = [ "m1.small", "m1.medium", "m1.large", "m1.xlarge",
-      "m3.medium", "m3.xlarge", "m3.2xlarge", "t1.micro", "m2.xlarge", "m2.2xlarge",
+      "m3.medium", "m3.large", "m3.xlarge", "m3.2xlarge", "t1.micro", "m2.xlarge", "m2.2xlarge",
       "m2.4xlarge", "c1.medium", "c1.xlarge", "c3.large", "c3.xlarge",
-      "c3.2xlarge", "r3.large", "r3.xlarge", "r3.2xlarge", "r3.4xlarge",
+      "c3.2xlarge", "r3.large", "r3.xlarge", "r3.2xlarge", "r3.4xlarge", "r3.8xlarge",
       "i2.xlarge", "i2.2xlarge", "i2.4xlarge", "i2.8xlarge" ]
     availability_zones = [ 'us-west-1a', 'us-west-1c', 'us-west-2a', 'us-west-2b', 'us-west-2c' ]
 
