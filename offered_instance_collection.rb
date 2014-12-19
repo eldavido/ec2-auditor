@@ -38,6 +38,7 @@ class OfferedInstanceCollection
       "c3.large"    => 0.120,
       "c3.xlarge"   => 0.239,
       "c3.2xlarge"  => 0.478,
+      "c3.4xlarge"  => 0.956,
       "r3.large"    => 0.390,
       "r3.xlarge"   => 0.780,
       "r3.2xlarge"  => 0.780,
