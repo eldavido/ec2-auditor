@@ -35,6 +35,12 @@ class ChefNodeCollection
       end
 
       node_role = node.run_list.to_s
+      # store the role's product name identifier if defined
+      begin
+        node_product = node[:crittercism][:tags][:product]
+      rescue
+        node_product = nil
+      end
       node_instance_type = node.ec2.instance_type
       node_az = node.ec2.placement_availability_zone
 
@@ -45,6 +51,7 @@ class ChefNodeCollection
       riaz[:count] = riaz[:count] + 1
       riaz[:cost] = riaz[:cost] + @ich.instance_dollars_per_month(node_instance_type, node_az)
       riaz[:nodes] << node_name
+      riaz[:product_name] = node_product
 
       role_instance_record[node_az] = riaz
       role_record[node_instance_type] = role_instance_record
